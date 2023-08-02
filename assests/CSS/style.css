@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Livvic:wght@900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Luckiest+Guy&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Prata&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Livvic', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Lora', serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prata', serif; //
+font-family: 'Yellowtail', cursive; 
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*****************************Navbar starts*****************************/
+
+
+nav {
+    /* position: relative; */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 90px;
+    transition: background-color .5s ease-in-out;
+    background-color: transparent;
+    /* background-color: #fff; */
+}
+
+nav.scrolled {
+    background-color: #ffffff;
+    /* background-color: orange; */
+    opacity: 0.98;
+}
+
+nav img {
+    width: 100px;
+    /* height: 120px; */
+    vertical-align: middle;
+}
+
+nav .company {
+    /* margin: 0; */
+    margin-left: -110px;
+    padding: 0;
+    color: #272262;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav .navbar {
+    position: relative;
+}
+
+nav .navbar .navbar_items a {
+    text-decoration: none;
+    color: #272262;
+    font-weight: 700;
+    margin-left: 35px;
+    position: relative;
+    transition: .3s ease;
+}
+
+nav .navbar .navbar_items a:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #f48939;
+    width: 0;
+    height: 3px;
+    transition: .3s ease;
+}
+
+nav .navbar .navbar_items a:hover:before {
+    width: 100%;
+}
+
+/*****************************Navbar ends*****************************/
+/*****************************Home starts*****************************/
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.home {
+    background-image: url("../images/home-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .img_section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(45deg, #272262, #f48939);
+    opacity: 0.5;
+}
+
+.home .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.img-text span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.img-text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #272262;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+a.button:hover {
+    color: #fff;
+    background-color: #c87e4f;
+}
+
+/*****************************Home ends*****************************/
+/*****************************About starts*****************************/
+.about {
+    width: 100%;
+    height: max-content;
+    padding: 10%;
+    /* background-color: rgba(0, 0, 0, .11); */
+    background-color: #f0f0f0a9;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    /* top: 60px; */
+}
+
+.about .about_main .image {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.about .about_main .about_text {
+    color: #272262;
+    /* margin-top: 10%; */
+}
+
+.about .about_main .about_text h1 span {
+    color: #f48939;
+    margin-right: 15px;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 55px;
+    margin-bottom: 10%;
+    /* position: relative;
+  bottom: 50px; */
+}
+
+.about .about_main .about_text h3 {
+    font-size: 30px;
+    margin: 0 0 5% 0;
+}
+
+.about .about_main .about_text p {
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
+.about .about_btn a {
+    background: #272262;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #f48939;
+    margin-top: 34px;
+}
+
+.about .about_btn a:hover {
+    color: #f48939;
+    background-color: #272262;
+    transition: .5s ease;
+}
+
+/*****************************About ends*****************************/
+/*****************************Services starts*****************************/
+.services {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+}
+
+.services .service_txt {
+    color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.services .service_txt h1 {
+    color: #272262;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services .service_txt h1 span {
+    color: #f48939;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.services .service_txt p {
+    color: #6f6f6f;
+    width: 700px;
+    text-align: center;
+}
+
+
+.services .service_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services .service_img .cards {
+    width: 450px;
+    height: 500px;
+    padding: 23px;
+    box-shadow: 9px -12px 39px -3px rgba(157, 157, 157, 1);
+}
+
+.services .service_img img {
+    width: 400px;
+    height: 450px;
+}
+
+.services .service_img .img_tagline {
+    display: none;
+}
+
+.services .service_img .cards:hover {
+    transition: .5s ease;
+    height: 550px;
+}
+
+.services .service_img .cards:hover .img_tagline {
+    transition: .5s ease;
+    display: block;
+}
+
+
+.services .service_img .img_tagline h2 {
+    color: #f48939;
+}
+
+/*****************************Services ends*****************************/
+/*****************************Pricing starts*****************************/
+.pricing {
+    background-image: linear-gradient(45deg, #272262, rgba(244, 137, 57, .8)), url("../images/pricing-bg.jpg");
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+/*****************************Pricing ends*****************************/
+
+/*****************************Footer starts*****************************/
+main {
+    width: 100%;
+}
+
+footer {
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, .3), #d0cfcf);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #272262;
+    box-shadow: 0 16px 70px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 20px 0 0;
+    border: #272262;
+    border-style: double;
+    border-width: 3px;
+}
+
+.foot .container_foot {
+    max-width: 1240px;
+    padding: 30px 40px;
+    margin: auto;
+}
+
+.foot .container_foot .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.foot .container_foot .content .details .logo_foot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.foot .container_foot .content .details .logo_foot img {
+    width: 200px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.foot .container_foot .content .details .logo_foot .logo_name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 1rem;
+    color: #272262;
+    text-transform: uppercase;
+}
+
+.foot .container_foot .content .details .desc_area {
+    max-width: 420px;
+    margin-bottom: 1.25rem;
+    margin-top: -60px;
+}
+
+.foot .container_foot .content .details .desc_area p {
+    color: #272262;
+    line-height: 35px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.social_footer a {
+    color: #272262;
+    margin-right: 22px;
+    font-size: 24px;
+}
+
+.social_footer a:hover {
+    color: #f48939;
+}
+
+.service_foot {
+    display: flex;
+}
+
+.list {
+    margin-right: 40px;
+    line-height: 60px;
+}
+
+.list li a {
+    color: #272262;
+    padding-bottom: 1px;
+    font-weight: 400;
+}
+
+.list li a:hover {
+    color: #f48939;
+    font-weight: 600;
+}
+
+hr {
+    height: 3px;
+    background-color: #f48939;
+    border: none;
+    border-radius: 50%;
+    transition: .3s linear;
+    margin-bottom: 1rem;
+}
+
+hr:hover {
+    background-color: #272262;
+    transform: scale(1.2);
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+li.service_name {
+    color: #f48939;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.foot li {
+    list-style: none;
+}
+
+.foot a {
+    text-decoration: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    color: #272262;
+    display: flex;
+    align-items: center;
+}
+
+.copyright span {
+    margin-left: 8px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+.terms a {
+    color: #272262;
+    margin-left: 1.5rem;
+}
+
+.terms a:hover {
+    color: #f48939;
+    transition: .2s linear;
+    transform: scale(1.1);
+}
+/*****************************Footer ends*****************************/

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assests/CSS/style.css"> -->
+    <link rel="stylesheet" href="./assests/CSS/order.css">
+    <link rel="stylesheet" href="./assests/CSS/media-queries.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assests/images/as-travels-logo-final.png" type="image/x-icon">
+
+    <title>AS-Travel | Book your Guide</title>
+</head>
+
+<body>
+    <!--------------------------------Navbar starts------------------------------>
+    <nav>
+        <img src="./assests/images/as-travels-logo-final.png"><a href="#" class="company">AS-Travels</a>
+        <div class="bar_btn"></div>
+        <div class="navbar">
+            <div class="navbar_items">
+                <a href="./index.html#Home" target="_blank" rel="noopener noreferrer">Home</a>
+                <a href="./index.html#About" target="_blank" rel="noopener noreferrer">About Us</a>
+                <a href="./index.html#Service" target="_blank" rel="noopener noreferrer">Services</a>
+                <a href="./index.html#Pricing" target="_blank" rel="noopener noreferrer">Pricing</a>
+                <a href="./contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                <a href="./order.html" target="_blank" rel="noopener noreferrer">Booking</a>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------Navbar ends------------------------------>
+    <div class="container_order">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">Billing Information</h3>
+
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Jon Mack">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address:</span>
+                        <input type="text" placeholder="House # 123, ABC street, XYZ town, PQR city, country">
+                    </div>
+                    <div class="inputBox">
+                        <span>City:</span>
+                        <input type="text" placeholder="Karachi">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State:</span>
+                            <input type="text" placeholder="Pakistan">
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip Code:</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">Payment Procedures</h3>
+
+                    <div class="inputBox">
+                        <span>Cards Accepted:</span>
+                        <img src="./assests/images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on the Card mentiond above:</span>
+                        <input type="text" placeholder="Mr. Jon Mack">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit Card Number:</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>Expiry Month:</span>
+                        <input type="text" placeholder="Jan">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expiry Year:</span>
+                            <input type="number" placeholder="2023">
+                        </div>
+                        <!-- <div class="inputBox">
+                                <span>CVV:</span>
+                                <input type="text" placeholder="1234">
+                            </div> -->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./assests/JS/app.js"></script>
+
+</body>
+
+</html>
